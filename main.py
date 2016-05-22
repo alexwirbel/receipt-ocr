@@ -19,11 +19,14 @@ lang = langs[0]
 print("Will use lang '%s'" % (lang))
 # Ex: Will use lang 'fra'
 #
-# txt = tool.image_to_string(
-#     Image.open('test.png'),
-#     lang=lang,
-#     builder=pyocr.builders.TextBuilder()
-# )
+txt = tool.image_to_string(
+    Image.open('img.png'),
+    lang=lang,
+    builder=pyocr.builders.TextBuilder()
+)
+
+print("Recognized text:\n%s" % txt)
+
 # word_boxes = tool.image_to_string(
 #     Image.open('test.png'),
 #     lang="eng",
