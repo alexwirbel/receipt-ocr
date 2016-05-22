@@ -20,7 +20,7 @@ print("Will use lang '%s'" % (lang))
 # Ex: Will use lang 'fra'
 #
 txt = tool.image_to_string(
-    Image.open('img.png'),
+    Image.open('img.jpg'),
     lang=lang,
     builder=pyocr.builders.TextBuilder()
 )
